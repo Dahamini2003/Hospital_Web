@@ -1,0 +1,573 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff; 
+    color: #005F6B; 
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.navbar {
+    background-color: #329dab; 
+    z-index: 1030;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav .nav-item a {
+    color: white;
+    transition: transform 0.5s ease;
+}
+
+.navbar-nav .nav-item a:hover {
+    transform: scale(1.1);
+    
+}
+
+.highlight-btn {
+    background-color:#005f6b; 
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px; 
+}
+
+.highlight-btn:hover {
+    background-color:#005f6b;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.5);
+}
+
+.highlight-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 140, 0, 0.5); 
+}
+
+.login-btn {
+    border: 2px solid #00FFFF; 
+    color: #00FFFF; 
+    background-color: transparent; 
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius:10px; 
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #00FFFF; 
+    color: white;
+    border-color: #00FFFF; 
+}
+
+.login-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.5);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/hero.png');
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(38, 46, 44, 0.6);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; 
+}
+
+.hero-caption {
+    font-size: 1.25rem;  
+    font-weight: 400;  
+    color: rgba(255, 255, 255, 0.75);  
+    margin-top: 20px;   
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.hero h1 {
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: #ffffff;  
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.25rem; 
+    font-weight: 400;   
+    color: #ffffff;   
+    padding: 10px 20px;
+    display: inline-block; 
+    text-shadow: 1px 1px 3px rgba(0, 87, 249, 0.5);
+    margin-bottom: 20px; 
+}
+
+.intro-section {
+    background-color: #f9f9f9;  
+    color: #333; 
+    padding: 50px 20px;  
+}
+
+.intro-section h1 {
+    font-size: 3rem; 
+    font-weight: 700;  
+    color: #333;  
+    margin-bottom: 20px; 
+}
+
+.intro-section .subheading {
+    font-size: 1.5rem; 
+    font-weight: 400;
+    color: #5D6D7E; 
+    margin-bottom: 20px;  
+}
+
+.intro-section .highlight-text {
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    color: #329dab;  
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1rem; 
+    line-height: 1.6; 
+    color: #666; 
+    margin-bottom: 20px; 
+}
+
+#facilities-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #329dab; 
+}
+
+#facilities-section p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+}
+
+.facility-card {
+    height: 100%; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.facility-card .card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.facility-card .card-title {
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    color: #333;
+}
+
+.facility-card .card-text {
+    font-size: 1rem;
+    color: #666; 
+    flex-grow: 1; 
+}
+
+#welcome-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#welcome-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #329dab; 
+}
+
+#welcome-section .welcome-text {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#welcome-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#welcome-section .btn-primary {
+    background-color: #329dab;
+    border: none;
+}
+
+#welcome-section .btn-primary:hover {
+    background-color: #287f8a;
+}
+
+#services-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #329dab; 
+}
+
+#services-section p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 400;
+    text-align: center;
+}
+
+.service-card {
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; 
+}
+
+.service-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #329dab; 
+}
+
+.service-card .card-text {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #329dab; 
+    margin-bottom: 20px;
+}
+
+#feedback-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #329dab; 
+}
+
+.feedback-profile-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.text-warning {
+    font-size: 1.2rem;
+}
+
+.feedback-card {
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #329dab; 
+    margin-bottom: 10px;
+}
+
+.feedback-card .card-text {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-card small {
+    color: #777;
+    font-size: 0.875rem;
+}
+
+#contact-section {
+    background-color: #f4f4f4;  
+    padding: 20px 50px;  
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+#contact-section h2 {
+    font-size: 2rem;  
+    font-weight: 600;
+    color: #329dab; 
+    margin-bottom: 2px;
+}
+
+#contact-section p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 5px;  
+    font-size: 0.8rem;  
+    background-color: #f3f3f3;
+    border: 1px solid #dfdfdf;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #329dab;  
+    border: none;
+    padding: 12px 18px;  
+    color: white;
+    font-size: 1rem;  
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #26898f; 
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 152, 143, 0.5); 
+}
+
+#contact-section .col-md-6 {
+    padding-left: 50px; 
+}
+
+#contact-section .col-md-6:last-child {
+    padding-left: 100px;
+}
+
+#map {
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-primary {
+    background-color: #007B8A; 
+    border-color: #007B8A;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.btn-primary:hover {
+    background-color: #3A9AD9; 
+    border-color: #3A9AD9;
+}
+
+.footer {
+    background-color: #005F6B; 
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #00FFFF; 
+}
+
+.footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #00FFFF; 
+}
+
+.footer ul li i {
+    margin-right: 10px;
+    color: #00FFFF; 
+}
+
+.footer form input {
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    width: 70%;
+}
+
+.footer form .btn {
+    border-radius: 5px;
+    background-color: #00FFFF;
+    color: #005F6B;
+    font-weight: bold;
+}
+
+.footer form .btn:hover {
+    background-color: #329dab;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00FFFF; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+
+    .profile-card, .options-card {
+        padding: 20px;
+    }
+
+    #facilities-section p {
+        font-size: 1rem;
+    }
+
+    .facility-card .card-body {
+        padding: 15px;
+    }
+
+    .feedback-card {
+        padding: 15px;
+    }
+
+    .feedback-profile-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #contact-section .row {
+        flex-direction: column;
+    }
+
+    #contact-section .col-md-6 {
+        padding-left: 0;
+    }
+
+    button[type="submit"] {
+        margin-top: 20px;  
+    }
+
+    .footer form input {
+        width: 100%;
+    }
+
+    .footer .social-icons {
+        justify-content: center;
+    }
+}
